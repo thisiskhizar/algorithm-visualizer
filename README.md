@@ -4,6 +4,8 @@ The Algorithm Visualizer is a web-based tool that allows users to visualize vari
 
 ### [Live Demo](https://thisiskhizar.github.io/algorithm-visualizer/)
 
+<img src="screenshot.jpeg" />
+
 ## Features
 
 - **Sorting Algorithms**: The Algorithm Visualizer supports the following sorting algorithms:
