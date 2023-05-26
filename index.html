@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The Algorithm Visualizer is a web tool that visually demonstrates sorting algorithms in action. It allows users to select and observe sorting algorithms such as Bubble Sort, Selection Sort, Merge Sort, and Quick Sort. The tool presents a set of randomly generated numbers as vertical bars, with each bar representing a number's value. As the sorting algorithm progresses, the bars move and change color to indicate the sorting process. Users can customize the array size and visualization speed, and a randomize button generates new arrays for sorting. The Algorithm Visualizer offers an interactive and educational way to understand sorting algorithms' functionality."
+    />
+    <meta
+      name="keywords"
+      content="sorting, sorting algorithms, sorting algorithm, sorting visualizer, algorithm visualizer, algorithm, algorithms, bubble sort, selection sort, merge sort, quick sort, bubble, selection, merge, quick, sort, visualizer, visual, visualization, web tool, web app, web application, web, tool, app, application, web development, web developer, developer, software, software development, software developer, computer science, computer scientist, computer, science, scientist, programming, programmer, code, coding, software engineer, engineer, engineering, software engineering"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Sorting Visualizer</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="container">
+          <ul class="nav__links">
+            <li class="logo">
+              <a href="index.html"><i class="uil uil-graph-bar"></i></a>
+            </li>
+            <li class="branding">
+              <a href="index.html">Sorting Visualizer</a>
+            </li>
+            <li class="info">
+              <a href="#">Info <i class="uil uil-info-circle"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <section class="action_buttons">
+        <div class="container">
+          <div class="settings_container_parent">
+            <div class="settings_container">
+              <div class="size_container">
+                <label for="size">Size:</label>
+                <input
+                  type="range"
+                  name="size"
+                  id="size"
+                  min="10"
+                  max="50"
+                  step="5"
+                  value="30"
+                />
+              </div>
+              <div class="speed_container">
+                <label for="speed">Speed:</label>
+                <input
+                  type="range"
+                  name="speed"
+                  id="speed"
+                  min="1"
+                  max="5"
+                  step="1"
+                  value="3"
+                />
+              </div>
+              <button id="generate_array" class="generate_array_btn">
+                Generate New Array
+              </button>
+            </div>
+
+            <div class="sorting_selector_buttons">
+              <button id="bubble_sort_btn" class="btn">Bubble</button>
+              <button id="selection_sort_btn" class="btn">Selection</button>
+              <button id="merge_sort_btn" class="btn">Merge</button>
+              <button id="quick_sort_btn" class="btn">Quick</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <div class="bars_container_parent">
+      <div class="bars_value_container"></div>
+      <div class="bars_container"></div>
+    </div>
+
+    <script src="scripts/bubble-sort.js"></script>
+    <script src="scripts/selection-sort.js"></script>
+    <script src="scripts/merge-sort.js"></script>
+    <script src="scripts/quick-sort.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
